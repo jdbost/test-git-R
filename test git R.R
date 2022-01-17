@@ -9,3 +9,6 @@ ggplot(latdata.1,aes(no))+geom_bar(aes(y=(..count..)/sum(..count..)), fill="stee
        y="Percent of sample", x="Country/region of origin")+
   theme_classic()
 dev.off()
+
+x <- data.frame(group = LETTERS[1:4],                # Create example data
+                prob = c(2, 1, 5, 3))
